@@ -8,7 +8,11 @@ const portRunning = 3000;
 const saltHash = 10;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://forum-lac-three.vercel.app',  // Substitua pela URL do seu frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,  // Se estiver lidando com cookies ou autenticação
+  }));
 
 // Rota de login
 app.post('/auth/login', async (req, res) => {
