@@ -1,0 +1,72 @@
+.containerPost {
+    position: relative;
+    width: 80%; /* Ou qualquer valor desejado */
+    margin: 20px auto; /* Centraliza e dá uma margem nas laterais */
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column; /* Coluna para os posts */
+    align-items: center; /* Centraliza os posts na página */
+}
+
+.topic {
+    width: 100%; /* Garante que o .topic ocupe toda a largura */
+    overflow: hidden;
+}
+
+.topic > header {
+    color: #FFF;
+    background: #2c353b;
+    padding: 10px;
+}
+
+.topic > ul {
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.boxContent {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /* Alinha título, conteúdo e ícones em linha */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.titleTopicContent {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    flex-grow: 1; /* Faz o título crescer e ocupar o espaço disponível */
+}
+
+.contentText {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha ícones e texto verticalmente */
+}
+
+.textContent {
+    margin-right: 10px; /* Espaço entre o texto e o ícone de curtidas */
+    font-size: 14px;
+}
+
+.likesCont {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.likeCount {
+    margin-left: 5px; /* Dá um pequeno espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o Link */
+a {
+    text-decoration: none;
+    color: inherit;
+}

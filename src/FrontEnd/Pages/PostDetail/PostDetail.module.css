@@ -1,0 +1,125 @@
+/* Estilo principal para o container do post */
+.containerPost {
+    position: relative;
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Bordas arredondadas para suavizar o design */
+    transition: transform 0.3s ease-in-out; /* Transição suave para interação */
+}
+
+.containerPost:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+/* Estilos para o cabeçalho do post */
+.topicHeader {
+    color: #fff;
+    background: #2c353b; /* Cor de fundo para o título */
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.titleTopic {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* Estilos para o conteúdo do post */
+.boxContent {
+    width: 100%;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #f8f8f8; /* Fundo suave */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contentText {
+    font-size: 16px;
+    color: #333; /* Cor mais escura para melhorar a legibilidade */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.detailsContainer p {
+    font-size: 15px;
+    color: #555; /* Cor mais suave para os detalhes */
+    margin: 5px 0;
+}
+
+/* Estilos para o contador de curtidas e visualizações */
+.likesCont, .viewsCont {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.likeCount, .viewCount {
+    margin-left: 8px;
+    font-weight: bold; /* Para dar um destaque suave aos números */
+}
+
+/* Estilos gerais para links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease; /* Transição suave para interação */
+}
+
+a:hover {
+    color: #2c353b; /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos para garantir boa responsividade */
+@media (max-width: 768px) {
+    .containerPost {
+        width: 95%; /* Tornar o container mais responsivo em telas menores */
+        padding: 20px;
+    }
+
+    .topicHeader {
+        padding: 10px;
+    }
+
+    .titleTopic {
+        font-size: 22px; /* Reduzir o tamanho do título em telas menores */
+    }
+
+    .boxContent {
+        padding: 15px;
+    }
+
+    .contentText {
+        font-size: 14px; /* Ajuste no tamanho da fonte para dispositivos móveis */
+    }
+
+    .detailsContainer p {
+        font-size: 13px;
+    }
+
+    .likesCont, .viewsCont {
+        font-size: 14px;
+    }
+}

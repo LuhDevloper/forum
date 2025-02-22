@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", serif;
+}
+.containerIndex{
+    background: #f1ecec;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.headerTop{
+    width: 100%;
+    height: 70px;
+    background-color: #2c353b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerTop > .logo{
+    font-size: 19pt;
+    font-weight: 500;
+    color: #FFF;
+}
+.navBarMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.navBarMenu > ul> li{
+    display: inline-block;
+    padding: 10px;
+}
+.navBarMenu > ul > li > a{
+    text-decoration: none;
+    color: #FFF;
+}
+.infoProfile {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden; /* Garante que nada saia do container */
+  }
+  
+  .infoProfile > figure {
+    width: 40px;  /* Definindo tamanho fixo */
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;  /* Garante que a imagem fique dentro do figure */
+    border-radius: 50%; /* Deixa o contêiner circular */
+  }
+  
+  .infoProfile > figure > img {
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Mantém a proporção sem distorcer */
+    border-radius: 50%;  /* Torna a imagem circular */
+}
+.at{
+    will-change: transform;
+    padding: 1px;
+    font-weight: bold;
+    color: red;
+    animation: hot 0.9s ease-in-out infinite;
+    display: inline-block;
+}
+.infoProfile > span > button{
+    color: #FFF;
+    background:none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.pageBody{
+    width: 100%;
+    height: 100%;
+}
+.pageBody{
+    width: 100%;
+    height: 100%;
+}
+@keyframes hot {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.06);
+    }
+}
