@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "./Login.module.css";
 
@@ -7,6 +8,7 @@ function Login() {
   const [password, SetPassword] = useState("");
   const [messageApi, setMessageApi] = useState(""); // Combina sucesso e erro em um único estado
   const [isError, setIsError] = useState(false); // Controle para saber se é erro ou sucesso
+  const navigate = useNavigate();
 
   const handleForm = async (e) => {
     const urlApi = 'http://localhost:3000/auth/login';
@@ -27,6 +29,7 @@ function Login() {
   
       // Mensagem de sucesso
       setMessageApi(response.data.message);
+      navigate('/home');
       setIsError(false); // Sucesso, então não é erro
   
     } catch (error) {
